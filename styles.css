@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", serif;
+
+  background-color: #f3f3f3;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #29c329;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #f3f3f3;
+}
+
+main {
+  width: 100%;
+  /* height: calc(100vh - 80px - 40px); */
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 100px;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: 100px; */
+  width: 100%;
+  height: 100%;
+}
+
+main section.tasks {
+  width: 100%;
+  background-color: #fa6b1e;
+  margin-bottom: 100px;
+}
+
+main #add-title-task {
+  width: 200px;
+  height: 30px;
+  text-indent: 10px;
+  border-radius: 10px;
+}
+
+main #add-task {
+  background-color: #1efab3;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #5a5a5a;
+}
+
+main #add-task:hover {
+  opacity: 0.6;
+}
+
+main section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main section ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+main section ul li button {
+  background-color: #fa6b1e;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #f3f3f3;
+}
+
+main section ul li button:hover {
+  opacity: 0.6;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #29c329;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

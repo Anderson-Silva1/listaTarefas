@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de tarefa</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Lista de Tarefas</h1>
+    </header>
 
     <main>
-      <h1>Lista de tarefas</h1>
+      <section id="section-form">
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Digite um aterefa"
+            id="add-title-task"
+          />
+          <button id="add-task">Adicionar tarefa</button>
+        </form>
+      </section>
 
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Digite um aterefa"
-          id="add-title-task"
-        />
-        <button id="add-task">Adicionar tarefa</button>
-      </form>
-
-      <section>
+      <section id="tasks">
         <ul id="todo-list-ul"></ul>
       </section>
     </main>
